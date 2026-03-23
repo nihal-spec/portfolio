@@ -1,8 +1,18 @@
 import { useState } from 'react'
 import anihubScreenshot from '../assets/anihub-screenshot.png'
 import portfolioScreenshot from '../assets/portfolio-screenshot.jpg'
+import skillxchangeScreenshot from '../assets/skillxchangeScreenshot.png'
+import skillxchangeScreenshot2 from '../assets/skillxchangelanding.png'
 
 const projectsData = [
+    {
+        title: 'SkillXchange Platform',
+        description: 'AI-powered skill exchange platform connecting learners and mentors with smart matching and real-time interaction.',
+        tags: ['MERN', 'AI Matching', 'Cloud Functions', 'Real-time Chat'],
+        liveUrl: 'https://skillxchange-now.vercel.app/',
+        screenshot: skillxchangeScreenshot2,
+        overlayStyle: 'modern'
+    },
     {
         title: 'AniHub – Anime Explorer',
         description: 'Anime browsing platform with trending listings, character info, and news using Jikan API.',
@@ -18,7 +28,7 @@ const projectsData = [
         liveUrl: 'https://animated-portfolio-xi-six.vercel.app/',
         screenshot: portfolioScreenshot,
         overlayStyle: 'cinematic'
-    }
+    },
 ]
 
 function ProjectCard({ project, index }) {
