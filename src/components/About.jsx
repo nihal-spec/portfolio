@@ -19,7 +19,7 @@ function About() {
                         </p>
                         <div className="about-stats">
                             <div className="stat">
-                                <span className="stat-number">3+</span>
+                                <span className="stat-number">4+</span>
                                 <span className="stat-label">Projects</span>
                             </div>
                             <div className="stat">

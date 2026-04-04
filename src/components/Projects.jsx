@@ -3,6 +3,7 @@ import anihubScreenshot from '../assets/anihub-screenshot.png'
 import portfolioScreenshot from '../assets/portfolio-screenshot.jpg'
 import skillxchangeScreenshot from '../assets/skillxchangeScreenshot.png'
 import skillxchangeScreenshot2 from '../assets/skillxchangelanding.png'
+import shopbotScreenshot from '../assets/shopbotScreenshot.png'
 
 const projectsData = [
     {
@@ -11,6 +12,14 @@ const projectsData = [
         tags: ['MERN', 'AI Matching', 'Cloud Functions', 'Real-time Chat'],
         liveUrl: 'https://skillxchange-now.vercel.app/',
         screenshot: skillxchangeScreenshot2,
+        overlayStyle: 'modern'
+    },
+    {
+        title: 'AI Shop Chatbot',
+        description: 'Chat-based e-commerce platform where users search products and place orders using natural language with AI-powered intent detection.',
+        tags: ['MERN', 'AI Chatbot', 'Stripe', 'Cloudinary'],
+        liveUrl: 'https://shop-chatbot.vercel.app/',
+        screenshot: shopbotScreenshot,
         overlayStyle: 'modern'
     },
     {
