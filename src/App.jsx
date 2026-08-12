@@ -15,13 +15,22 @@ import {
   MoveUpRight,
   X,
 } from "lucide-react";
+import orbitMark from "./assets/nihal-orbit-mark.webp";
+import profileImage from "./assets/profile.jpg";
+import heroField from "./assets/nihal-hero-ember-field.webp";
+import paperTexture from "./assets/nihal-paper-cutout-texture.webp";
+import projectTexture from "./assets/nihal-project-ember-texture.webp";
+import skillXchangeImage from "./assets/skillxchangelanding.png";
+import shopbotImage from "./assets/shopbotScreenshot.png";
+import anihubImage from "./assets/anihub-screenshot.png";
+import portfolioImage from "./assets/portfolio-screenshot.jpg";
 
 const assets = {
-  logo: "./assets/nihal-orbit-mark.webp",
-  profile: "./assets/profile.jpg",
-  hero: "./assets/nihal-hero-ember-field.webp",
-  paper: "./assets/nihal-paper-cutout-texture.webp",
-  texture: "./assets/nihal-project-ember-texture.webp",
+  logo: orbitMark,
+  profile: profileImage,
+  hero: heroField,
+  paper: paperTexture,
+  texture: projectTexture,
 };
 
 const projects = [
@@ -32,7 +41,7 @@ const projects = [
     description:
       "An AI-powered skill exchange platform connecting learners and mentors through smart matching and real-time interaction.",
     tags: ["MERN", "AI Matching", "Cloud Functions", "Real-time Chat"],
-    image: "./assets/skillxchangelanding.png",
+    image: skillXchangeImage,
     liveUrl: "https://skillxchange-now.vercel.app/",
     accent: "ember",
   },
@@ -43,7 +52,7 @@ const projects = [
     description:
       "A chat-led e-commerce experience where users find products and place orders through natural-language intent detection.",
     tags: ["MERN", "AI Chatbot", "Stripe", "Cloudinary"],
-    image: "./assets/shopbotScreenshot.png",
+    image: shopbotImage,
     liveUrl: "https://shop-chatbot.vercel.app/",
     accent: "cobalt",
   },
@@ -54,7 +63,7 @@ const projects = [
     description:
       "A responsive anime discovery platform with trending listings, character information, and news powered by the Jikan API.",
     tags: ["React.js", "Jikan API", "Axios"],
-    image: "./assets/anihub-screenshot.png",
+    image: anihubImage,
     liveUrl: "https://anihub-six.vercel.app/",
     accent: "violet",
   },
@@ -65,7 +74,7 @@ const projects = [
     description:
       "A scroll-based portfolio with a cinematic loading sequence, canvas atmosphere, and responsive layout decisions.",
     tags: ["Next.js", "Canvas", "Framer Motion"],
-    image: "./assets/portfolio-screenshot.jpg",
+    image: portfolioImage,
     liveUrl: "https://animated-portfolio-xi-six.vercel.app/",
     accent: "graphite",
   },
