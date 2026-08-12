@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint src/App.jsx src/main.jsx",
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "^0.453.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
