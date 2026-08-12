@@ -8,6 +8,7 @@ import {
   ArrowUpRight,
   Check,
   Code2,
+  Download,
   Github,
   Linkedin,
   Mail,
@@ -209,6 +210,7 @@ export default function Home() {
             <p className="hero-intro" data-reveal>I’m Muhammed Nihal VK — a junior MERN Stack and React developer building scalable, interactive, performance-driven web experiences.</p>
             <div className="hero-actions" data-reveal>
               <button className="button button-dark" onClick={() => scrollToSection("projects")}>Explore the work <ArrowDownRight size={17} /></button>
+              <a className="button button-resume" href="/muhammed-nihal-vk-resume.pdf" download>Download Resume <Download size={16} /></a>
               <a className="text-link" href="mailto:nihalvk01@gmail.com">Start a conversation <ArrowUpRight size={16} /></a>
             </div>
           </div>
