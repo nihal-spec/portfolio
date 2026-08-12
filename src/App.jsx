@@ -238,7 +238,7 @@ export default function Home() {
               <div className="stat-row" data-reveal>
                 <div><strong>04+</strong><span>Projects shipped</span></div>
                 <div><strong>05+</strong><span>Core technologies</span></div>
-                <div><strong>01</strong><span>Industry internship</span></div>
+                <div><strong>02</strong><span>Work chapters</span></div>
               </div>
             </div>
             <div className="about-card" data-reveal>
@@ -299,7 +299,7 @@ export default function Home() {
         <section className="chapter chapter-experience" id="experience">
           <div className="section-shell split-layout experience-layout">
             <div className="chapter-label" data-reveal><span>04</span><span>Experience</span></div>
-            <div className="experience-copy"><p className="eyebrow" data-reveal>Career / The work behind the work</p><h2 data-reveal>Still early.<br /><span>Already moving.</span></h2><div className="timeline-entry" data-reveal><div className="timeline-meta"><span>2025 — Present</span><span>Kerala, IN</span></div><h3>MERN Stack Developer Intern</h3><p className="timeline-company">Futura Labs</p><ul><li>Developed full-stack applications using the MERN stack.</li><li>Built responsive UIs with React and Tailwind.</li><li>Implemented REST APIs and JWT authentication.</li><li>Collaborated using Git workflows.</li></ul></div><div className="education-entry" data-reveal><div><span className="eyebrow">Academic foundation</span><h3>B.Sc Computer Science</h3><p>Kannur University · 2025</p></div><Code2 size={28} /></div></div>
+            <div className="experience-copy"><p className="eyebrow" data-reveal>Career / The work behind the work</p><h2 data-reveal>Still early.<br /><span>Already moving.</span></h2><div className="timeline-entry timeline-current" data-reveal><div className="timeline-meta"><span>2026 — Present</span><span>Kerala, IN</span></div><h3>Next.js Developer</h3><p className="timeline-company">Tecnots</p><ul><li>Developed scalable Next.js applications using the App Router and SSR.</li><li>Built Supabase data workflows and integrated Prisma ORM.</li><li>Worked with Dockerized development and deployment environments.</li></ul></div><div className="timeline-entry timeline-previous" data-reveal><div className="timeline-meta"><span>2025 — 2026</span><span>Kerala, IN</span></div><h3>MERN Stack Developer Intern</h3><p className="timeline-company">Futura Labs</p><ul><li>Developed full-stack applications using the MERN stack.</li><li>Built responsive UIs with React and Tailwind.</li><li>Implemented REST APIs and JWT authentication.</li><li>Collaborated using Git workflows.</li></ul></div><div className="education-entry" data-reveal><div><span className="eyebrow">Academic foundation</span><h3>B.Sc Computer Science</h3><p>Kannur University · 2025</p></div><Code2 size={28} /></div></div>
             <div className="experience-art" data-reveal style={{ backgroundImage: `url(${assets.texture})` }}><span className="experience-art-label">Learn / make / repeat</span><span className="experience-art-number">05</span></div>
           </div>
         </section>
