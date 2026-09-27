@@ -1,43 +1,57 @@
-function Experience() {
-    const experienceData = {
-        title: 'MERN Stack Developer Intern',
-        company: 'Futura Labs, Kerala',
-        date: '2025 – Present',
-        points: [
-            'Developed full-stack applications using MERN stack',
-            'Built responsive UIs with React & Tailwind',
-            'Implemented REST APIs & JWT authentication',
-            'Collaborated using Git workflows'
-        ]
-    }
+import { GraduationCap } from "lucide-react";
+import { education, experience } from "../data/portfolio.js";
 
-    return (
-        <section className="section experience" id="experience">
-            <div className="container">
-                <div className="section-header reveal">
-                    <span className="section-tag">Career</span>
-                    <h2 className="section-title">Work <span className="highlight">Experience</span></h2>
-                </div>
-                <div className="timeline">
-                    <div className="timeline-item glass-card reveal">
-                        <div className="timeline-marker"></div>
-                        <div className="timeline-content">
-                            <div className="timeline-header">
-                                <h3>{experienceData.title}</h3>
-                                <span className="timeline-date">{experienceData.date}</span>
-                            </div>
-                            <p className="timeline-company">{experienceData.company}</p>
-                            <ul className="timeline-list">
-                                {experienceData.points.map((point, index) => (
-                                    <li key={index}>{point}</li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+export default function Experience() {
+  return (
+    <section className="section experience" id="experience" aria-labelledby="experience-title">
+      <div className="shell">
+        <header className="section-head" data-reveal>
+          <p className="eyebrow mono">
+            <span className="accent">04</span> / Experience
+          </p>
+          <h2 id="experience-title" className="section-title">
+            Still early. <em className="serif">Already moving.</em>
+          </h2>
+        </header>
+
+        <ol className="timeline">
+          {experience.map((job) => (
+            <li key={job.id} className={`job ${job.current ? "is-current" : ""}`} data-reveal>
+              <div className="job-when mono">
+                <span>{job.period}</span>
+                <span className="muted">{job.location}</span>
+              </div>
+              <div className="job-what">
+                <h3>
+                  {job.role} <span className="muted">at</span> <span className="job-company">{job.company}</span>
+                  {job.current && (
+                    <span className="now-badge mono">
+                      <span className="pulse" aria-hidden="true" /> Now
+                    </span>
+                  )}
+                </h3>
+                <ul>
+                  {job.points.map((point) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              </div>
+            </li>
+          ))}
+          <li className="job job-edu" data-reveal>
+            <div className="job-when mono">
+              <span>{education.year}</span>
+              <span className="muted">{education.location}</span>
             </div>
-        </section>
-    )
+            <div className="job-what">
+              <h3>
+                <GraduationCap size={20} className="accent" aria-hidden="true" /> {education.degree}{" "}
+                <span className="muted">at</span> <span className="job-company">{education.school}</span>
+              </h3>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+  );
 }
-
-export default Experience
